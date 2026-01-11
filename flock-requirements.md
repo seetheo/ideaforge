@@ -41,6 +41,15 @@ Set up Tauri project with React + TypeScript + Tailwind CSS + shadcn/ui:
 - Configure build system and development environment
 - Set up ESLint, Prettier, TypeScript strict mode
 
+**Template Management (Phase 1)**
+- All 34 templates defined for project creation flow:
+  - General/Platform (10): Mobile App, Desktop App, Web Application, Web GUI, CLI Tool, Library/SDK, Game, Sports App, IoT Device, Embedded System
+  - API/Services (10): REST API, Web API, GraphQL API, Microservice API, Linux Service, Windows Service, Web Service, Serverless Function, Auth Service, Notification Service
+  - Data (1): Data Pipeline/ETL
+  - Platform Extensions (2): Chrome/Edge Extension, VS Code/JetBrains Extension
+  - Specialized (3): CMS/E-commerce, Real-time Collaboration, Smart Contract/Blockchain
+  - Language-Specific (8): Python Module, Python Package, C++ Module, C++ Application, Rust Module, Rust Application, Go Module, Go Application
+
 ### Phase 2: Brain Dump & AI Processing
 
 Implement brain dump experience with AI-powered analysis:
@@ -85,6 +94,15 @@ Implement advanced AI-powered features and integrations:
 - Timeline/Gantt chart visualization
 - Code snippet generation
 
+**Best Practice Warnings (Phase 4)**
+- Deprecated technologies (red badge)
+- Anti-patterns (orange badge)
+- Security vulnerabilities (red badge with exclamation)
+- Performance issues (yellow badge)
+- Scalability concerns (yellow badge)
+- Warning levels: Error, Warning, Info, Suggestion
+- Integrate warnings into tech stack comparison and architecture recommendations
+
 ### Phase 5: Polish & User Experience
 
 Implement polish and enhancement features:
@@ -119,6 +137,15 @@ Implement comprehensive testing and quality assurance:
 - Fix bugs found during testing
 - Create test coverage reports
 
+**Quality Gates (Phase 6)**
+- All tests must pass before merging
+- Code must be linted (ESLint, rust-analyzer)
+- Code must be formatted (Prettier, rustfmt)
+- No security vulnerabilities
+- Minimum test coverage met (>80%)
+- Documentation updated for new features
+- Implement CI/CD pipeline to enforce quality gates automatically
+
 ### Phase 7: Documentation & Release
 
 Complete documentation and prepare for release:
@@ -132,44 +159,14 @@ Complete documentation and prepare for release:
 - Distribution channels set up
 - Release notes published
 
-## Additional Requirements
-
-### Template Management
-
-- All 34 templates defined:
-  - General/Platform (10): Mobile App, Desktop App, Web Application, Web GUI, CLI Tool, Library/SDK, Game, Sports App, IoT Device, Embedded System
-  - API/Services (10): REST API, Web API, GraphQL API, Microservice API, Linux Service, Windows Service, Web Service, Serverless Function, Auth Service, Notification Service
-  - Data (1): Data Pipeline/ETL
-  - Platform Extensions (2): Chrome/Edge Extension, VS Code/JetBrains Extension
-  - Specialized (3): CMS/E-commerce, Real-time Collaboration, Smart Contract/Blockchain
-  - Language-Specific (8): Python Module, Python Package, C++ Module, C++ Application, Rust Module, Rust Application, Go Module, Go Application
-
-### Best Practice Warnings
-
-- Deprecated technologies (red badge)
-- Anti-patterns (orange badge)
-- Security vulnerabilities (red badge with exclamation)
-- Performance issues (yellow badge)
-- Scalability concerns (yellow badge)
-- Warning levels: Error, Warning, Info, Suggestion
-
-### Quality Gates
-
-- All tests must pass before merging
-- Code must be linted (ESLint, rust-analyzer)
-- Code must be formatted (Prettier, rustfmt)
-- No security vulnerabilities
-- Minimum test coverage met (>80%)
-- Documentation updated for new features
-
-### Documentation Requirements
-
+**Documentation Requirements (Phase 7)**
 - Clear and concise
 - Screenshots and diagrams
 - Code examples
 - Cross-references
 - Searchable
 - Accessible (WCAG 2.1 AA)
+- Apply to all documentation: user docs, developer docs, installation guides, README, and release notes
 
 ## Implementation Notes
 

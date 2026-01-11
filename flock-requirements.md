@@ -10,7 +10,11 @@ IdeaForge is an AI-powered application planning and development tool that helps 
 - **Backend**: Rust (Tauri)
 - **Database**: SQLite (Prisma ORM)
 - **State Management**: Zustand (client), TanStack Query (server)
-- **AI Providers**: z.ai API (primary), GLM 4.7 MCP Server (images)
+- **AI Providers**: Multi-provider support with:
+  * zai GLM 4.7 (primary - general reasoning, code, vision)
+  * deepseek-reasoner (advanced reasoning tasks)
+  * OpenAI-compatible endpoints (customizable base URL)
+  * Fallback provider system with automatic retry
 
 ## Core Requirements
 
@@ -23,7 +27,15 @@ Set up Tauri project with React + TypeScript + Tailwind CSS + shadcn/ui:
 - Create complete database schema (Project, BrainDump, AudioFile, Feature, Task, Version, Tag, ProjectTag, BrainDumpTag, FeatureTag)
 - Set up Zustand for client state management
 - Create basic project dashboard UI
-- Implement z.ai API integration (primary AI provider)
+- Implement multi-provider AI system:
+  * Provider configuration UI (select active provider, configure API keys, set custom endpoints)
+  * Provider capabilities display (text, code, vision, reasoning)
+  * Request routing (primary → fallback chain)
+  * API key management (secure storage, environment variables: ZAI_API_KEY, DEEPSEEK_API_KEY, OPENAI_API_KEY)
+  * Connection testing per provider
+  * Rate limiting and retry logic
+  * Request/response caching
+  * Error handling with graceful degradation
 - Set up file system operations for project storage
 - Create basic routing structure with React Router
 - Configure build system and development environment
